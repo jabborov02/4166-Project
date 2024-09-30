@@ -1,0 +1,206 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5;
+}
+
+/* Header Styles */
+.header {
+    background-color: #10457e;
+    color: white;
+    padding: 15px 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo svg {
+    width: 50px;
+    height: 50px; 
+    margin: 10px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    gap: 8px;
+}
+
+.search-bar input[type="search"] {
+    padding: 8px 16px;
+    border: 1px solid #ced4da;
+    border-radius: 50px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.search-bar input[type="search"]:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.search-bar button {
+    padding: 8px 16px;
+    background-color: #10457e;
+    color: white;
+    border: 1px solid #007bff;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.search-bar button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+.nav-item {
+    display: inline;
+    margin-left: 15px;
+
+
+}
+.nav-item :hover {
+    background-color: #0056b3;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for both background and scale */
+    border-radius: 4px;
+    
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* Container for the item details */
+.item-detail-container {
+    display: none; /* Hide all item details initially */
+    max-width: 800px; /* Reduced maximum width */
+    margin: 20px auto; /* Center container horizontally */
+    padding: 10px; /* Reduced padding */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Show the targeted item detail based on the URL hash */
+:target {
+    display: flex; /* Show only the targeted item detail */
+}
+
+/* Styling for the item image */
+.item-image {
+    margin-right: 10px; /* Reduced margin */
+}
+
+.item-image img {
+    max-width: 100%; /* Scale image to fit container */
+    max-width: 500px; /* Limit image size */
+    height: 300px;
+}
+
+/* Styling for the item details */
+.item-info {
+    flex: 1;
+    padding: 10px; /* Reduced padding */
+    font-size: 0.9em; /* Smaller text */
+}
+
+.item-title {
+    font-size: 1.2rem; /* Slightly smaller title */
+    font-weight: bold;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.item-condition,
+.item-price,
+.item-offers,
+.item-seller {
+    font-size: 0.9rem; /* Smaller text */
+    margin-bottom: 10px;
+    color: #777;
+}
+
+/* Styling for the action buttons */
+.item-actions {
+    margin-top: 10px; /* Reduced margin */
+}
+
+.edit-button,
+.delete-button {
+    background-color: #10457e;
+    color: white;
+    padding: 5px 15px; /* Smaller buttons */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 0.9em; /* Smaller text */
+    transition: background-color 0.3s;
+}
+
+.edit-button:hover,
+.delete-button:hover {
+    background-color: #0056b3;
+}
+
+.delete-button {
+    background-color: #d9534f;
+}
+
+.delete-button:hover {
+    background-color: #c9302c;
+}
+
+/* Footer */
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #10457e;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin: 0 5px;
+}
+
+.social-icon img {
+    width: 100%;
+    height: auto;
+}

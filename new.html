@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Marketplace - Home</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="new.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <h1>Car Marketplace </h1>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-car-front" viewBox="0 0 16 16">
+                    <path
+                        d="M4 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0m10 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0M6 8a1 1 0 0 0 0 2h4a1 1 0 1 0 0-2zM4.862 4.276 3.906 6.19a.51.51 0 0 0 .497.731c.91-.073 2.35-.17 3.597-.17s2.688.097 3.597.17a.51.51 0 0 0 .497-.731l-.956-1.913A.5.5 0 0 0 10.691 4H5.309a.5.5 0 0 0-.447.276" />
+                    <path
+                        d="M2.52 3.515A2.5 2.5 0 0 1 4.82 2h6.362c1 0 1.904.596 2.298 1.515l.792 1.848c.075.175.21.319.38.404.5.25.855.715.965 1.262l.335 1.679q.05.242.049.49v.413c0 .814-.39 1.543-1 1.997V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.338c-1.292.048-2.745.088-4 .088s-2.708-.04-4-.088V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.892c-.61-.454-1-1.183-1-1.997v-.413a2.5 2.5 0 0 1 .049-.49l.335-1.68c.11-.546.465-1.012.964-1.261a.8.8 0 0 0 .381-.404l.792-1.848ZM4.82 3a1.5 1.5 0 0 0-1.379.91l-.792 1.847a1.8 1.8 0 0 1-.853.904.8.8 0 0 0-.43.564L1.03 8.904a1.5 1.5 0 0 0-.03.294v.413c0 .796.62 1.448 1.408 1.484 1.555.07 3.786.155 5.592.155s4.037-.084 5.592-.155A1.48 1.48 0 0 0 15 9.611v-.413q0-.148-.03-.294l-.335-1.68a.8.8 0 0 0-.43-.563 1.8 1.8 0 0 1-.853-.904l-.792-1.848A1.5 1.5 0 0 0 11.18 3z" />
+                </svg>
+            </a>
+            <form class="d-flex search-bar" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
+                <button class="btn btn-outline-light" type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-search" viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001l3.85 3.85a1 1 0 0 0 1.415-1.415l-3.85-3.85zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                    </svg>
+                </button>
+            </form>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a href="items.html" class="nav-link">Browse</a></li>
+                    <li class="nav-item"><a href="new.html" class="nav-link">Sell</a></li>
+                    <li class="nav-item"><a href="signup.html" class="nav-link">Sign Up</a></li>
+                    <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <h1>List a New Item</h1>
+            <form action="#" method="post" enctype="multipart/form-data" class="item-form">
+                <label for="condition">Condition:</label>
+                <select id="condition" name="condition" required>
+                    <option value="" disabled selected>Select condition</option>
+                    <option value="new">New</option>
+                    <option value="used">Used</option>
+                    <option value="refurbished">Refurbished</option>
+                    <option value="certified">Certified Pre-Owned</option>
+                    <option value="damaged">Damaged</option>
+                </select>
+
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="seller">Seller:</label>
+                <input type="text" id="seller" name="seller" required>
+
+                <label for="price">Price:</label>
+                <input type="number" id="price" name="price" step="0.01" required>
+
+                <label for="details">Details:</label>
+                <textarea id="details" name="details" rows="4" required></textarea>
+
+                <label for="image">Image:</label>
+                <input type="file" id="image" name="image" accept="image/*" required>
+
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Car Marketplace. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank" class="social-icon">
+                    <img src="logo/facebook_logo.png" alt="Facebook Logo">
+                </a>
+                <a href="https://www.instagram.com" target="_blank" class="social-icon">
+                    <img src="logo/instagramlogo.png" alt="Instagram Logo">
+                </a>
+                <a href="https://www.x.com" target="_blank" class="social-icon">
+                    <img src="logo/x_logo.png" alt="X Logo">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+
+</html>

@@ -1,0 +1,172 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
+}
+
+/* Header Styles */
+.header {
+    background-color: #10457e;
+    color: white;
+    padding: 15px 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo svg {
+    width: 50px;
+    height: 50px; 
+    margin: 10px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    gap: 8px;
+}
+
+.search-bar input[type="search"] {
+    padding: 8px 16px;
+    border: 1px solid #ced4da;
+    border-radius: 50px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.search-bar input[type="search"]:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.search-bar button {
+    padding: 8px 16px;
+    background-color: #10457e;
+    color: white;
+    border: 1px solid #007bff;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.search-bar button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+.nav-item {
+    display: inline;
+    margin-left: 15px;
+}
+
+.nav-item :hover {
+    background-color: #0056b3;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for both background and scale */
+    border-radius: 4px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* Form Container */
+.form-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1; /* Ensures the form container grows to fill available space */
+}
+
+/* Form Elements */
+.item-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.item-form input[type="text"],
+.item-form input[type="number"],
+.item-form textarea,
+.item-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.item-form textarea {
+    resize: vertical;
+}
+
+.item-form button.submit-button {
+    background-color: #10457e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.item-form button.submit-button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #10457e;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    flex-shrink: 0; /* Prevent the footer from shrinking */
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icon {
+    display: inline-block;
+    width: 24px; /* Adjust the size of icons */
+    height: 24px; /* Adjust the size of icons */
+    margin: 0 5px;
+}
+
+.social-icon img {
+    width: 100%; /* Make the image fill its container */
+    height: auto; /* Maintain aspect ratio */
+}
